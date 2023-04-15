@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(100, 152, 135);
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1920px;
+    max-height: 1080px;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    min-width: 10px;
+    min-height: 10px;
+}
+
+#grid-count {
+    display: flex;
+}
+
+#grid-size, #grid-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 26px;
+}
+
+#grid-controls {
+    font-size: 2em; 
+}
+
+#grid-controls .control-text {
+    font-size: 20px;
+}
+
+#color-picker {
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px black;
+}
+
+#size-16, #size-32, #size-64, #size-100{
+    background-color: #af4c54; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px black;
+}
+
+#size-16:hover, 
+#size-32:hover, 
+#size-64:hover,
+#size-100:hover,
+#color-picker:hover {
+    transform: scale(1.1);
+    background-color: rgb(221, 176, 103);
+    transition: .2s;
+}

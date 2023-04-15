@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div id="grid-size">
+        <button class="16" id="size-16">16x16</button>
+        <button class="32" id="size-32">32x32</button>
+        <button class="64" id="size-64">64x64</button>
+        <button class="100" id="size-100">100x100</button>
+    </div>
+    <div id="grid-controls">
+        <i class="fa-solid fa-eraser">
+            <span class="control-text">Eraser</span>
+        </i>
+        <i class="fa-solid fa-palette">
+            <span class="control-text">Color Picker</span>
+            <input type="color" id="color-picker" name="color-picker">
+        </i>
+    </div>
+    <div class="grid-container">
+        <div class="grid">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/88f420867c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
